@@ -25,7 +25,7 @@ public class StudentService {
     }
 
     public Flux<Student> findByFirstname(String firstname) {
-        return repository.findAllByFirstnameContainingIgnoreCase(firstname);
+        return repository.findAllByFirstNameContainingIgnoreCase(firstname);
     }
 
     public void deleteById(Integer id) {

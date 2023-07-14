@@ -7,5 +7,5 @@ import reactor.core.publisher.Flux;
 
 @Repository
 public interface StudentRepository extends ReactiveCrudRepository<Student, Integer> {
-    Flux<Student> findAllByFirstnameContainingIgnoreCase(String firstname);
+    Flux<Student> findAllByFirstNameContainingIgnoreCase(String firstname);
 }
