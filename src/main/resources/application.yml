@@ -9,6 +9,10 @@ spring:
             acquire-timeout: 30s
             validation-query: SELECT 1
             prepared-statements: true
+    flyway:
+        url: jdbc:postgresql://localhost:5432/spring_reactive
+        user: postgres
+        password: password
 
 logging:
     level:
