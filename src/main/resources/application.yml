@@ -1,0 +1,15 @@
+spring:
+    r2dbc:
+        url: r2dbc:postgresql://localhost:5432/spring_reactive
+        username: postgres
+        password: password
+        pool:
+            initial-size: 10
+            max-size: 20
+            acquire-timeout: 30s
+            validation-query: SELECT 1
+            prepared-statements: true
+
+logging:
+    level:
+        org.springframework.data.r2dbc: DEBUG
